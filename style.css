@@ -11,14 +11,28 @@ body {
 
 header {
   display: flex;
-  justify-content: space-evenly;
-  height: 7vh;
-  align-items: center;
+  flex-direction: column;
+  background-color: rgb(231, 231, 231);
 }
 
-header > h3 {
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 6vh;
+  align-items: center;
+  background-color: rgba(124, 57, 57, 0.5);
+}
+
+.nav-container > button {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  border: none;
+  background-color: rgba(124, 57, 57, 0);
+  font-size: 18px;
+}
+
+.nav-container > button:hover {
+  color: rgb(216, 191, 191);
 }
 
 .title {
@@ -30,23 +44,94 @@ header > h3 {
 
 .main {
   height: 75vh;
-  background-color: rgb(240, 153, 119);
+  background-color: rgb(0, 0, 0);
+  color: rgb(194, 194, 194);
+}
+
+.home {
   display: flex;
+  justify-content: center;
+  padding: 3rem;
 }
 
+h3,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
 footer {
-  background-color: rgb(69, 99, 69);
-  height: 15vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(124, 57, 57, 0.8); */
+  background-color: rgb(49, 43, 43);
 }
 
-.salmon {
-  height: 80%;
+footer > h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: rgba(221, 221, 221, 0.7);
+  font-size: 17px;
+}
+
+footer > a > i {
+  color: black;
+  margin: 7px;
+}
+.home-img {
+  height: 90%;
+  padding-right: 3rem;
 }
 
 hr {
   opacity: 20%;
 }
 
-.intro-text {
-  width: 50%;
+.text-container {
+  width: 30%;
+  margin: 3rem;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu-item {
+  margin-left: 25vw;
+  margin-right: 10vw;
+}
+
+.menu-img {
+  width: 20%;
+  height: 75%;
+  margin-top: 100px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.contact > img {
+  height: 65%;
+  width: 35%;
+  margin: 20px;
+}
+
+.contact > h3 {
+  margin: 20px;
 }
