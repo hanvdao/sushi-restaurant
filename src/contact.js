@@ -18,7 +18,7 @@ function createContactPage() {
   address.textContent = "1581 Webster St #150, San Francisco, CA 94115";
 
   const map = document.createElement("img");
-  map.src = "../assets/map.PNG";
+  map.src = "../assets/map.png";
 
   contact.appendChild(phone);
   contact.appendChild(address);
